@@ -35,7 +35,7 @@ jobs:
       - name: Terraform Plan
   run: terraform plan -input=false
    env:
-    TF_LOG: DEBUG
+TF_LOG: DEBUG
 
       - name: Terraform Apply
         run: terraform apply -auto-approve
