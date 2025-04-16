@@ -34,11 +34,11 @@ jobs:
 
       - name: Terraform Plan
         run: |
-        echo "Tenant from ENV: $TF_VAR_tenant_id"
-        terraform plan -input=false
+          echo "Tenant from ENV: $TF_VAR_tenant_id"
+          terraform plan -input=false
         env:
           TF_LOG: DEBUG
-          TF_LOG_PATH: terraform.log          
+          TF_LOG_PATH: terraform.log         
 
       - name: Terraform Apply
         run: terraform apply -auto-approve
