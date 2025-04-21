@@ -9,3 +9,5 @@ module "storage_account" {
   location             = var.location
   resource_group_name  = azurerm_resource_group.example.name
 }
+
+//execute terraform init
